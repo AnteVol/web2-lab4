@@ -1,41 +1,224 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTTP/1.0 and HTTP/2.0</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Web2 lab4 website for testing HTTP/1.1 and HTTP/2.0!</h1>
-    </header>
-    
-    <section>
-        <h2>Some random images:</h2>
-        <div class="gallery">
-            <img src="images/fer1.png" alt="Image 1">
-            <img src="images/FER.jpg" alt="Image 2">
-            <img src="images/1304072.jpeg" alt="Image 3">
-            <img src="images/fer-5-3.jpg" alt="Image 4">
-            <img src="images/images.png" alt="Image 5">
-            <img src="images/rara.png" alt="Image 6">
-            <img src="images/SOLAR FER2.jpg" alt="Image 7">
-            <img src="images/FER_Zagreb.jpg" alt="Image 8">
-            <img src="images/ferfer.png" alt="Image 9">
-            <img src="images/fer21312312.jpg" alt="Image 10">
-            <img src="images/fer32.jpg" alt="Image 10">
+    <div class="controls">
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="toggleVisibility()">Toggle Gallery Visibility</button>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/image-1.jpg" alt="Image 1">
         </div>
-    </section>
+        <div class="gallery-item">
+            <img src="images/image-2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-4.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-5.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-6.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-7.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-8.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-9.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-10.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-11.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-12.jpg" alt="Image 12">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-13.jpg" alt="Image 13">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-14.jpg" alt="Image 14">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-15.jpg" alt="Image 15">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-16.jpg" alt="Image 16">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-17.jpg" alt="Image 17">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-18.jpg" alt="Image 18">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-19.jpg" alt="Image 19">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-20.jpg" alt="Image 20">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-21.jpg" alt="Image 21">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-22.jpg" alt="Image 22">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-23.jpg" alt="Image 23">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-24.jpg" alt="Image 24">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-25.jpg" alt="Image 25">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-26.jpg" alt="Image 26">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-27.jpg" alt="Image 27">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-28.jpg" alt="Image 28">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-29.jpg" alt="Image 29">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-30.jpg" alt="Image 30">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-31.jpg" alt="Image 31">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-32.jpg" alt="Image 32">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-33.jpg" alt="Image 33">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-34.jpg" alt="Image 34">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-35.jpg" alt="Image 35">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-36.jpg" alt="Image 36">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-37.jpg" alt="Image 37">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-38.jpg" alt="Image 38">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-39.jpg" alt="Image 39">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-40.jpg" alt="Image 40">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-41.jpg" alt="Image 41">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-42.jpg" alt="Image 42">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-43.jpg" alt="Image 43">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-44.jpg" alt="Image 44">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-45.jpg" alt="Image 45">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-46.jpg" alt="Image 46">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-47.jpg" alt="Image 47">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-48.jpg" alt="Image 48">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-49.jpg" alt="Image 49">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-50.jpg" alt="Image 50">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-51.jpg" alt="Image 51">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-52.jpg" alt="Image 52">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-53.jpg" alt="Image 53">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-54.jpg" alt="Image 54">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-55.jpg" alt="Image 55">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-56.jpg" alt="Image 56">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-57.jpg" alt="Image 57">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-58.jpg" alt="Image 58">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-59.jpg" alt="Image 59">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-60.jpg" alt="Image 60">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-61.jpg" alt="Image 61">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-62.jpg" alt="Image 62">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-63.jpg" alt="Image 63">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-64.jpg" alt="Image 64">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image-65.jpg" alt="Image 65">
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="changeText()">Change Text</button>
+        <p id="text">This is some text.</p>
+    </div>
 
-    <section>
-        <h2>Counter Example for using a js file:</h2>
-        <div class="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-        </div>
-    </section>
+    <script src="scripts/alert.js"></script>
+    <script src="scripts/backgroundColor.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/changeText.js"></script>
+    <script src="scripts/timer.js"></script>
+    <script src="scripts/sum.js"></script>
 </body>
 </html>
